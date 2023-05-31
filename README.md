@@ -1,17 +1,14 @@
-# Laravel Breeze - Astro Edition 🏝️
-
-
-## Not sure if it worth to try? but Island architecture look nice
+# Laravel Breeze - Astro.js Edition 🏝️
 
 ## Introduction
 
-This repository is an implementing of the [Laravel Breeze](https://laravel.com/docs/starter-kits) application / authentication starter kit frontend in [Astro](https://astro.build). All of the authentication boilerplate is already written for you - powered by [Laravel Sanctum](https://laravel.com/docs/sanctum), allowing you to quickly begin pairing your beautiful Astro frontend with a powerful Laravel backend.
+This repository is an implementation of the [Laravel Breeze](https://laravel.com/docs/starter-kits) application / authentication starter kit frontend in [Astro.js](https://astro.build). All of the authentication boilerplate is already written for you - powered by [Laravel Sanctum](https://laravel.com/docs/sanctum), allowing you to quickly begin pairing your beautiful Astro.js frontend with a powerful Laravel backend.
 
 ## Official Documentation
 
 ### Installation
 
-First, create a Astro compatible Laravel backend by installing Laravel Breeze into a [fresh Laravel application](https://laravel.com/docs/installation) and installing Breeze's API scaffolding:
+First, create a Astro.js compatible Laravel backend by installing Laravel Breeze into a [fresh Laravel application](https://laravel.com/docs/installation) and installing Breeze's API scaffolding:
 
 ```bash
 # Create the Laravel application...
@@ -23,6 +20,9 @@ cd astro-backend
 composer require laravel/breeze --dev
 
 php artisan breeze:install api
+
+# Run database migrations...
+php artisan migrate
 ```
 
 Next, ensure that your application's `APP_URL` and `FRONTEND_URL` environment variables are set to `http://localhost:8000` and `http://localhost:3000`, respectively.
@@ -47,8 +47,6 @@ npm run dev
 ```
 
 > Note: Currently, we recommend using `localhost` during local development of your backend and frontend to avoid CORS "Same-Origin" issues.
-
-### Authentication Hook
 
 ### Named Routes
 
